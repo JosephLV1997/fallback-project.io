@@ -14,29 +14,43 @@
 
 <body>
 
-    <div class="header">
-        <a href="index.html" class="logo">Visions of Albion</a>
-        <div class="header-right">
-            <a href="index.html">Home</a>
-            <a href="tours-shows.html">Tours & Shows</a>
-            <a href="the-band.html">The Band</a>
-            <a href="shop.html">Shop</a>
-            <a class="active" href="archive.html">Archive</a>
-        </div>
-    </div>
+    <div class="topnav" id="myTopnav">
+  <a href="index.html" x>Home</a>
+  <a href="tours-shows.html">Tours</a>
+  <a href="archive.html" class="active" >Archive</a>
+  <a href="the-band.html">The band</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+    
+    
 
     <footer class="footer">
         <a href="https://www.facebook.com/VisionsofAlbion" class="fa fa-facebook"></a>
         <a href="https://twitter.com/VisionsofAlbion" class="fa fa-twitter"></a>
     </footer>
+<div class="container">
+    <iframe id="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/_tfQKzUH60o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    
+    <iframe id="youtube-video"  width="560" height="315" src="https://www.youtube.com/embed/DtgGoE8kPZc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <iframe id="youtube-video" src="https://www.youtube.com/embed/lBrMq5oKNIY"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    
-
+    <iframe id="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/lBrMq5oKNIY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
     <!--code has been provided by w3schools : https://www.w3schools.com/css/css3_pagination.asp-->
+    <div class="container">
     <div class="pagination">
         <a href="#">&laquo;</a>
         <a href="archive.html">1</a>
@@ -44,4 +58,5 @@
         <a href="video-three.html">3</a>
         <a href="video-two.html">&raquo;</a>
     </div>
+</div>
     <!--code has been provided by w3schools : https://www.w3schools.com/css/css3_pagination.asp-->

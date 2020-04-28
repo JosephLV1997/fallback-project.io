@@ -11,34 +11,51 @@
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="header">
-        <a href="index.html" class="logo">Visions of Albion</a>
-        <div class="header-right">
-            <a href="index.html">Home</a>
-            <a href="tours-shows.html">Tours & Shows</a>
-            <a class="active" href="the-band.html">The Band</a>
-            <a href="shop.html">Shop</a>
-            <a href="archive.html">Archive</a>
-        </div>
-    </div>
-    <p class="band-info">Visions of Albion are a Liverpool-based duo formed in 2017. Currently recording their first EP, Visions of Albion have went from strength to strength. So far, they have earned spots at acclaimed events such as playing ‘Light Night’  2019’ at Liverpool Philharmonic music room, Liverpool Acoustic’s ‘Songwriting Challenge’ and supporting ex-Inspiral Carpets’ frontman Tom Hingley - their unique blend of harmonies and guitar being described as ‘English Folk meets Laurel Canyon’.</p>
+    <div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="tours-shows.html">Tours</a>
+  <a href="archive.html">Archive</a>
+  <a href="the-band.html"  class="active">The band</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+    <div class="container">
+    <p>Visions of Albion are a Liverpool-based duo formed in 2017. Currently recording their first EP, Visions of Albion have went from strength to strength. So far, they have earned spots at acclaimed events such as playing ‘Light Night’  2019’ at Liverpool Philharmonic music room, Liverpool Acoustic’s ‘Songwriting Challenge’ and supporting ex-Inspiral Carpets’ frontman Tom Hingley - their unique blend of harmonies and guitar being described as ‘English Folk meets Laurel Canyon’.</p> 
+</div>
+
+<div class="container">
+    <img id="band-picture" src="assets/images/voa-1.jpg" alt="Smiley face" style="max-height: 100%;">
+    </div>
     <div class="footer">
         <a href="https://www.facebook.com/daniel.ryan.94009841" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
     </div>
-
+<div class="container"
     <div class="footer">
         <a href="https://www.facebook.com/daniel.ryan.94009841" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
     </div>
+</body>
 
-<img src="assets/images/voa-1.jpg" class="band-picture" alt="A picture of Daniel and Samantha">
-    
+
 </body>
 
 </html>

@@ -16,24 +16,61 @@
 
 <body>
 
-    <div class="header">
-        <a href="index.html" class="logo">Visions of Albion</a>
-        <div class="header-right">
-            <a href="index.html">Home</a>
-            <a class="active" href="tours-shows.html">Tours & Shows</a>
-            <a href="the-band.html">The Band</a>
-            <a href="shop.html">Shop</a>
-            <a href="archive.html">Archive</a>
-        </div>
-    </div>
+    <div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a href="tours-shows.html" class="active">Tours</a>
+  <a href="archive.html">Archive</a>
+  <a href="the-band.html">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+    
+    <div class="container"><button class="open-button" onclick="openForm()">Open Form</button>
+    <img src="assets/images/cavern-club.jpg" class="cavern-clb1" alt="A picture of the cavern club"></div>
+    
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <p>Online sales are currently not facilitated. tickets can be purchased from respective venue websites or  at the venue itself. please submit your contact information so we can provide more guidence if needed</p>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    
+
+    <button type="submit" class="btn">Send Email</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
     <div class="tour-link"></div>
-    <p class="gig-info">15th April 2020</p>
-<img src="assets/images/cavern-club.jpg" class="cavern-clb1" alt="A picture of the cavern club">
+    <p class="gig-info">Date : 23rd October 2020 <br>
+    Venue: Cavern Club</p>
+
     <div class="footer">
         <a href="https://www.facebook.com/daniel.ryan.94009841" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
     </div>
-<a class="booking" href="#">Book Now</a>
+
     <div class="footer">
         <a href="https://www.facebook.com/daniel.ryan.94009841" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
