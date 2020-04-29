@@ -1,84 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico">
+    <title>Home Page</title>
 </head>
+
 <body>
+    <!--code for navbar was provided by w3schools : https://www.w3schools.com/howto/howto_js_topnav_responsive.asp javascript is included with this code and has not been altered-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Visions of Albion</a>
+        <a href="tours-shows.html">Tours</a>
+        <a href="archive.html">Archive</a>
 
-<div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="tours-shows.html">Tours</a>
-  <a href="archive.html">Archive</a>
-  <a href="the-band.html">The band</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-
-
-<div class="container">
-    <p style="font-size:3vw;">Hello and welcome to the Visions of Albion website. Our duo consists of myself (Dan) and my better half Sam.
-        <br>
-        <br> We have started this website in the hope it shows a fresh perspective in comparison to our pages on respective social media sites such as Facebook, Twitter and Instagram and be able to put our stamp, our image.
-        <br>
-        <br> We hope to publish our past recordings in the form of videos on the site as well as implmenting a functioning shop so that our merchandise will be available for you to purchase.
-        <br>
-        <br> In addtion, we hope to have a page dedicated to detailing us as a duo in further detail which will summarise our history, our present and also what we will be intending to do in the future such as gigs and other future endeavours.</p>
-</div>
-
-<div class="container">
-  <div class="row">
-
-    <div class="col-sm">
-      <img id="band-picture" src="assets/images/voa-1.jpg">
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-  </div>
-</div>
-
-
-<div class="container">
-
-    <div class="footer">
-        <a href="https://www.facebook.com/daniel.ryan.94009841" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-    </div>
-</div>
-    <div class="footer">
-        <a href="https://www.facebook.com/daniel.ryan.94009841" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+    <div class="container">
+        <p style="font-size:3vw;">Hello and welcome to the Visions of Albion website. Our duo consists of myself (Dan) and my better half Sam.
+            <br>
+            <br> We have started this website in the hope it shows a fresh perspective in comparison to our pages on respective social media sites such as Facebook, Twitter and Instagram and be able to put our stamp, our image.
+            <br>
+            <br> We hope to publish our past recordings in the form of videos on the site as well as implmenting a functioning shop so that our merchandise will be available for you to purchase.
+            <br>
+            <br> In addtion, we hope to have a page dedicated to detailing us as a duo in further detail which will summarise our history, our present and also what we will be intending to do in the future such as gigs and other future endeavours.</p>
+    </div>
 
+    <div class="container">
+        <p style="font-size:3vw;">Visions of Albion are a Liverpool-based duo formed in 2017. Currently recording their first EP, Visions of Albion have went from strength to strength. So far, they have earned spots at acclaimed events such as playing ‘Light Night’ 2019’ at Liverpool Philharmonic music room, Liverpool Acoustic’s ‘Songwriting Challenge’ and supporting ex-Inspiral Carpets’ frontman Tom Hingley - their unique blend of harmonies and guitar being described as ‘English Folk meets Laurel Canyon’.</p>
+    </div>
+    <!--chttps://www.w3schools.com/w3css/w3css_slideshow.asp, https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_rr this code has been provdied by the preceeding links. Javascript has also been invluded in this function and is located further below this page-->
+    <div class="w3-content w3-section">
+        <img class="mySlides" src="assets/images/voa-1.jpg" style="width:100%" alt="a picture of Daniel and Samantha">
+        <img class="mySlides" src="assets/images/voa-2.jpg" style="width:100%" alt="a piece of artwork detailing Visions of Albion">
+        <img class="mySlides" src="assets/images/voa-3.jpg" style="width:100%" alt="Daniel and Samantha performing">
+      </div>
+
+        <div class="container">
+            <!--Social media code has been provided by w3Schools : https://www.w3schools.com/howto/howto_css_social_media_buttons.asp css code will be cited respectively to within the style.css document  -->
+            <div class="footer">
+                <a href="https://www.facebook.com/daniel.ryan.94009841" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+
+            <div class="footer">
+                <a href="https://www.facebook.com/daniel.ryan.94009841" class="fa fa-facebook" target="_blank"></a>
+                <a href="#" class="fa fa-twitter" target="_blank"></a>
+            </div>
+        </div>
+
+        <!--js code has been provided by w3Schools: https://www.w3schools.com/w3css/w3css_slideshow.asp, https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_rr-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
 </body>
+
 </html>
